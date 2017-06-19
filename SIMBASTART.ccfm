@@ -118,7 +118,7 @@
           <cm:constant cm:id="iQ1FfDydMLkOLNi5u" cm:type="ps:filetype">def</cm:constant>
         </cm:property>
         <cm:property cm:id="ixBkWbs5x-GFQoapL" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="inWH6qQW4sIrObw55" cm:type="ps:directory">C:\Users\Danilo Damasceno\workspace\SIMBASTART\input\java\src\main\java\br\ufrn\simba\instancia</cm:constant>
+          <cm:constant cm:id="inWH6qQW4sIrObw55" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia</cm:constant>
         </cm:property>
         <cm:property cm:id="iKp_ypqhLi1O4-T-n" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="iAYCoGg2a3A3ulXGy" cm:type="ps:string">Danilo Damasceno</cm:constant>
@@ -127,10 +127,10 @@
           <cm:constant cm:id="ijPEw5ppOT8_Of7xw" cm:type="ps:datetime">2017-06-19T01:33:32.415Z</cm:constant>
         </cm:property>
         <cm:property cm:id="i34vYayY_cJuttjJe" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i5KmARRNuuFnMbrY0" cm:type="ps:string">Danilo Damasceno</cm:constant>
+          <cm:constant cm:id="i5KmARRNuuFnMbrY0" cm:type="ps:string">joao</cm:constant>
         </cm:property>
         <cm:property cm:id="iP3ZwUJ3LYuL2l12p" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="i2isPjA-TlnuS-mhS" cm:type="ps:datetime">2017-06-19T01:33:32.415Z</cm:constant>
+          <cm:constant cm:id="i2isPjA-TlnuS-mhS" cm:type="ps:datetime">2017-06-19T01:51:44.099Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>

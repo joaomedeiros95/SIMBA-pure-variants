@@ -535,5 +535,29 @@
         </cm:property>
       </cm:properties>
     </cm:element>
+    <cm:element cm:id="ilMzuo4h94EdTrS18" cm:type="ps:selected" cm:class="ps:selection">
+      <cm:relations cm:id="ivVMZ-e-BWjSgF-9M" cm:class="ps:references">
+        <cm:relation cm:id="i1LaHaomLMlwz6Pu6" cm:type="ps:references">
+          <cm:target cm:id="ixdhEsqxAW1KtL_K2">iacLpN55b-lYQRB1F/iHIRv822zg_21du7j</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iepGpoIt10HSZOasP" cm:type="ps:string" cm:invisible="true" cm:name="ps:selector">
+          <cm:constant cm:id="idD9FnpkkefBQZAq_" cm:type="ps:string">ps:user</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i6TGqJXtzLKyXVPwm" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="if0YlC1QVNc9SYtbP" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i5U__gnLiDF46i953" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="i5D7UIx_6qmYgcvS7" cm:type="ps:datetime">2017-06-19T01:52:20.480Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="isw8hK0fuRaN6dlha" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iDUYTu0u0lrWaipsF" cm:type="ps:string">joao</cm:constant>
+        </cm:property>
+        <cm:property cm:id="igBYsFieqYVPVfOQ4" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="im9eBK1-FxurZdvNr" cm:type="ps:datetime">2017-06-19T01:52:20.480Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+    </cm:element>
   </cm:elements>
 </cm:consulmodel>

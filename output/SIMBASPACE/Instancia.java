@@ -19,6 +19,8 @@ import java.util.List;
 public class Instancia {
 
 	// 
+	public static long sensorImpactoHash;
+	// 
     public static long sensorCalorHash;
     public static long sensorSomHash;
     public static long sensorMovimentoHash;
