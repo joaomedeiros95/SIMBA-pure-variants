@@ -15,34 +15,30 @@ import java.util.List;
 /**
  * Created by joao on 10/06/17.
  */
-public class EstrategiaSegurancaFechadoImpacto extends EstrategiaSegurancaFechado {
+public class EstrategiaSegurancaFechadoCamera extends EstrategiaSegurancaFechado {
 
-    public EstrategiaSegurancaFechadoImpacto() {
-    	// PV:IFCOND(pv:hasFeature('email'))
+    public EstrategiaSegurancaFechadoCamera() {
         this.addAlerta(new NotificacaoEmail());
-        // PV:ENDCOND
-        // PV:IFCOND(pv:hasFeature('sirenes'))
         this.addAlerta(new Sirene(false, 5));
-        // PV:ENDCOND
-        // PV:IFCOND(pv:hasFeature('bollands'))
-        this.addAlerta(new Bollands(false, 8));
-        // PV:ENDCOND
-        // PV:IFCOND(pv:hasFeature('autoridades'))
         this.addAlerta(new NotificacaoPolicia());
-        // PV:ENDCOND
-        // PV:IFCOND(pv:hasFeature('sms'))
         this.addAlerta(new NotificacaoSlack());
-        // PV:ENDCOND
     }
 
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
+        boolean notificar = false;
         for (final Estado estado : estados) {
-            if (estado.getHash() == Instancia.sensorImpactoHash) {
-                if (estado.getValor() >= 1) {
-                    notificar(estados);
-                }
+            if (estado.getHash() == Instancia.sensorMovimentoHash) {
+                notificar = estado.getValor() < 600;
             }
+
+            if (notificar && estado.getHash() == Instancia.cameraMovimentoHash) {
+                notificar = estado.getValor() == 1;
+            }
+        }
+
+        if (notificar) {
+            notificar(estados);
         }
     }
 }

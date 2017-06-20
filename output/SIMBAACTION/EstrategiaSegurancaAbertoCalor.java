@@ -16,29 +16,19 @@ import java.util.List;
 public class EstrategiaSegurancaAbertoCalor extends EstrategiaSegurancaAberto {
 
     public EstrategiaSegurancaAbertoCalor() {
-    	// PV:IFCOND(pv:hasFeature('email'))
         this.addAlerta(new NotificacaoEmail());
-        // PV:ENDCOND
-        
-        // PV:IFCOND(pv:hasFeature('sms'))
         this.addAlerta(new NotificacaoSlack());
-        // PV:ENDCOND
-        
-        // PV:IFCOND(pv:hasFeature('sirenes'))
         this.addAlerta(new Sirene(false, 5));
-        // PV:ENDCOND
     }
 
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
         for (final Estado estado : estados) {
-        	
-        	if (estado.getHash() == Instancia.sensorCalorHash) {
+            if (estado.getHash() == Instancia.sensorCalorHash) {
                 if (estado.getValor() == 1) {
                     notificar(estados);
                 }
             }
-        	
         }
     }
 }

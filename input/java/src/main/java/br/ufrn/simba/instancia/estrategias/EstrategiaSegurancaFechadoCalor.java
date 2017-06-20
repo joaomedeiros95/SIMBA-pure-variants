@@ -18,11 +18,21 @@ import java.util.List;
 public class EstrategiaSegurancaFechadoCalor extends EstrategiaSegurancaFechado {
 
     public EstrategiaSegurancaFechadoCalor() {
+    	// PV:IFCOND(pv:hasFeature('email'))
         this.addAlerta(new NotificacaoEmail());
+        // PV:ENDCOND
+        // PV:IFCOND(pv:hasFeature('sirenes'))
         this.addAlerta(new Sirene(false, 5));
+        // PV:ENDCOND
+        // PV:IFCOND(pv:hasFeature('bollands'))
         this.addAlerta(new Bollands(false, 8));
+        // PV:ENDCOND
+        // PV:IFCOND(pv:hasFeature('autoridades'))
         this.addAlerta(new NotificacaoPolicia());
+        // PV:ENDCOND
+        // PV:IFCOND(pv:hasFeature('sms'))
         this.addAlerta(new NotificacaoSlack());
+        // PV:ENDCOND
     }
 
     @Override

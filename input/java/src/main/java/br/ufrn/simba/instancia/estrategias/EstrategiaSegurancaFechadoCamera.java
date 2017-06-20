@@ -18,19 +18,29 @@ import java.util.List;
 public class EstrategiaSegurancaFechadoCamera extends EstrategiaSegurancaFechado {
 
     public EstrategiaSegurancaFechadoCamera() {
+    	// PV:IFCOND(pv:hasFeature('email'))
         this.addAlerta(new NotificacaoEmail());
+        // PV:ENDCOND
+        // PV:IFCOND(pv:hasFeature('sirenes'))
         this.addAlerta(new Sirene(false, 5));
+        // PV:ENDCOND
+        // PV:IFCOND(pv:hasFeature('autoridades'))
         this.addAlerta(new NotificacaoPolicia());
+        // PV:ENDCOND
+        // PV:IFCOND(pv:hasFeature('sms'))
         this.addAlerta(new NotificacaoSlack());
+        // PV:ENDCOND
     }
 
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
         boolean notificar = false;
         for (final Estado estado : estados) {
+        	// PV:IFCOND(pv:hasFeature('movimento'))
             if (estado.getHash() == Instancia.sensorMovimentoHash) {
                 notificar = estado.getValor() < 600;
             }
+            // PV:ENDCOND
 
             if (notificar && estado.getHash() == Instancia.cameraMovimentoHash) {
                 notificar = estado.getValor() == 1;

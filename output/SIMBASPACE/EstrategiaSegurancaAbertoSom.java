@@ -15,12 +15,8 @@ import java.util.List;
 public class EstrategiaSegurancaAbertoSom extends EstrategiaSegurancaAberto {
 
     public EstrategiaSegurancaAbertoSom() {
-    	// PV:IFCOND(pv:hasFeature('email'))
         this.addAlerta(new NotificacaoEmail());
-        // PV:ENDCOND
-        // PV:IFCOND(pv:hasFeature('sms'))
         this.addAlerta(new NotificacaoSlack());
-        // PV:ENDCOND
     }
 
     @Override

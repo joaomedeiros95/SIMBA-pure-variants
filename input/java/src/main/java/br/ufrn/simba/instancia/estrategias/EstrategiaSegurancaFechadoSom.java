@@ -15,8 +15,12 @@ import java.util.List;
 public class EstrategiaSegurancaFechadoSom extends EstrategiaSegurancaFechado {
 
     public EstrategiaSegurancaFechadoSom() {
+    	// PV:IFCOND(pv:hasFeature('email'))
         this.addAlerta(new NotificacaoEmail());
+        // PV:ENDCOND
+        // PV:IFCOND(pv:hasFeature('sms'))
         this.addAlerta(new NotificacaoSlack());
+        // PV:ENDCOND
     }
 
     @Override

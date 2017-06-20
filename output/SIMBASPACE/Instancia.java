@@ -19,43 +19,48 @@ import java.util.List;
 public class Instancia {
 
 	// 
-	public static long sensorImpactoHash;
 	// 
-    public static long sensorCalorHash;
-    public static long sensorSomHash;
-    public static long sensorMovimentoHash;
+    // 
+    // 
+    // 
     public static long cameraMovimentoHash;
+    // 
+    
 
     public static void main(String[] args) {
         final MonitorEvento monitorEvento = new MonitorEvento();
-        final Impacto impacto = new Impacto(2, false,
-                "Sensor de Impacto", 1);
-        final Calor calor = new Calor(10, false, "Sensor de Calor", 2);
-        final Som som = new Som(3, true, "Sensor de Som", 3);
-        final Movimento movimento = new Movimento(12, false, "Sensor de Movimento", 4);
-        final CameraMovimento cameraMovimento = new CameraMovimento();
-        sensorImpactoHash = impacto.getHash();
-        sensorCalorHash = calor.getHash();
-        sensorSomHash = som.getHash();
-        sensorMovimentoHash = movimento.getHash();
-        cameraMovimentoHash = CameraMovimento.HASH;
+        
+        // 
+        
+        // 
+        
+        // 
+        
+        // 
 
-        monitorEvento.addDispositivo(impacto);
-        monitorEvento.addDispositivo(calor);
-        monitorEvento.addDispositivo(som);
-        monitorEvento.addDispositivo(movimento);
+        // 
+        final CameraMovimento cameraMovimento = new CameraMovimento();
+        cameraMovimentoHash = CameraMovimento.HASH;
         monitorEvento.addDispositivo(cameraMovimento);
+        // 
+        
+                   
+        
 
         final MonitorEstrategiaSeguranca monitor =
                 new MonitorEstrategiaSeguranca(monitorEvento, null);
-        monitor.addEstrategiaSeguranca(new EstrategiaSegurancaAbertoSom());
-        monitor.addEstrategiaSeguranca(new EstrategiaSegurancaAbertoCalor());
-        monitor.addEstrategiaSeguranca(new EstrategiaSegurancaAbertoImpacto());
-        monitor.addEstrategiaSeguranca(new EstrategiaSegurancaFechadoSom());
-        monitor.addEstrategiaSeguranca(new EstrategiaSegurancaFechadoMovimento());
+        // 
+        
+        // 
+        
+        // 
+        
+        // 
         monitor.addEstrategiaSeguranca(new EstrategiaSegurancaFechadoCamera());
-        monitor.addEstrategiaSeguranca(new EstrategiaSegurancaFechadoImpacto());
-        monitor.addEstrategiaSeguranca(new EstrategiaSegurancaFechadoCalor());
+        // 
+        
+        // 
+       
 
         final List<MonitorEstrategiaSeguranca> monitores = new ArrayList<>();
         monitores.add(monitor);
