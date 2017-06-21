@@ -38,7 +38,7 @@ public class EstrategiaSegurancaFechadoCamera extends EstrategiaSegurancaFechado
         for (final Estado estado : estados) {
         	// PV:IFCOND(pv:hasFeature('movimento'))
             if (estado.getHash() == Instancia.sensorMovimentoHash) {
-                notificar = estado.getValor() < 600;
+                notificar = estado.getValor() == 1;
             }
             // PV:ENDCOND
             // PV:IFCOND(pv:hasFeature('camera_unica'))

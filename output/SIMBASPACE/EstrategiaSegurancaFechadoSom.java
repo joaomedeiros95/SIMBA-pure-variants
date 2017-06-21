@@ -24,11 +24,7 @@ public class EstrategiaSegurancaFechadoSom extends EstrategiaSegurancaFechado {
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
         for (final Estado estado : estados) {
-            if (estado.getHash() == Instancia.sensorSomHash) {
-                if (estado.getValor() > 600) {
-                    notificar(estados);
-                }
-            }
+            // 
         }
     }
 

@@ -36,13 +36,14 @@ public class EstrategiaSegurancaFechadoCamera extends EstrategiaSegurancaFechado
         for (final Estado estado : estados) {
         	// 
             if (estado.getHash() == Instancia.sensorMovimentoHash) {
-                notificar = estado.getValor() < 600;
+                notificar = estado.getValor() == 1;
             }
             // 
-
+            // 
             if (notificar && estado.getHash() == Instancia.cameraMovimentoHash) {
                 notificar = estado.getValor() == 1;
             }
+            // 
         }
 
         if (notificar) {

@@ -32,11 +32,7 @@ public class EstrategiaSegurancaAbertoImpacto extends EstrategiaSegurancaAberto 
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
         for (final Estado estado : estados) {
-            if (estado.getHash() == Instancia.sensorImpactoHash) {
-                if (estado.getValor() >= 1) {
-                    notificar(estados);
-                }
-            }
+            // 
         }
     }
 }

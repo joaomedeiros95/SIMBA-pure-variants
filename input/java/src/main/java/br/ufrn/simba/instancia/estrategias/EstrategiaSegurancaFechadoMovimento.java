@@ -32,7 +32,7 @@ public class EstrategiaSegurancaFechadoMovimento extends EstrategiaSegurancaFech
         for (final Estado estado : estados) {
             // PV:IFCOND(pv:hasFeature('movimento'))
             if (estado.getHash() == Instancia.sensorMovimentoHash) {
-                if (estado.getValor() < 600) {
+                if (estado.getValor() == 1) {
                     notificar(estados);
                 }
             }
