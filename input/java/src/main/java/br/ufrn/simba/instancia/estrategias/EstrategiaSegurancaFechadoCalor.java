@@ -38,11 +38,13 @@ public class EstrategiaSegurancaFechadoCalor extends EstrategiaSegurancaFechado 
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
         for (final Estado estado : estados) {
+            // PV:IFCOND(pv:hasFeature('calor'))
             if (estado.getHash() == Instancia.sensorCalorHash) {
                 if (estado.getValor() == 1) {
                     notificar(estados);
                 }
             }
+            // PV:ENDCOND
         }
     }
 }

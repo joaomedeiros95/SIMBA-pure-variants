@@ -30,11 +30,13 @@ public class EstrategiaSegurancaFechadoMovimento extends EstrategiaSegurancaFech
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
         for (final Estado estado : estados) {
+            // PV:IFCOND(pv:hasFeature('movimento'))
             if (estado.getHash() == Instancia.sensorMovimentoHash) {
                 if (estado.getValor() < 600) {
                     notificar(estados);
                 }
             }
+            // PV:ENDCOND
         }
     }
 

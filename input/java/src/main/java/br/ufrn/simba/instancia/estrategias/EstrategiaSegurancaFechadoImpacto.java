@@ -38,11 +38,13 @@ public class EstrategiaSegurancaFechadoImpacto extends EstrategiaSegurancaFechad
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
         for (final Estado estado : estados) {
+            // PV:IFCOND(pv:hasFeature('impacto'))
             if (estado.getHash() == Instancia.sensorImpactoHash) {
                 if (estado.getValor() >= 1) {
                     notificar(estados);
                 }
             }
+            // PV:ENDCOND
         }
     }
 }

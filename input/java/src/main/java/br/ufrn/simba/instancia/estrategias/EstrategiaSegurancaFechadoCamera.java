@@ -41,10 +41,11 @@ public class EstrategiaSegurancaFechadoCamera extends EstrategiaSegurancaFechado
                 notificar = estado.getValor() < 600;
             }
             // PV:ENDCOND
-
+            // PV:IFCOND(pv:hasFeature('camera_unica'))
             if (notificar && estado.getHash() == Instancia.cameraMovimentoHash) {
                 notificar = estado.getValor() == 1;
             }
+            // PV:ENDCOND
         }
 
         if (notificar) {

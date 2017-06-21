@@ -26,11 +26,13 @@ public class EstrategiaSegurancaAbertoSom extends EstrategiaSegurancaAberto {
     @Override
     public void execute(final List<Estado> estados) throws IOException, EmailException {
         for (final Estado estado : estados) {
+            // PV:IFCOND(pv:hasFeature('som'))
             if (estado.getHash() == Instancia.sensorSomHash) {
                 if (estado.getValor() > 1000) {
                     notificar(estados);
                 }
             }
+            // PV:ENDCOND
         }
     }
 
