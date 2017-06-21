@@ -15,8 +15,12 @@ import java.util.List;
 public class EstrategiaSegurancaAbertoSom extends EstrategiaSegurancaAberto {
 
     public EstrategiaSegurancaAbertoSom() {
+    	// 
         this.addAlerta(new NotificacaoEmail());
+        // 
+        // 
         this.addAlerta(new NotificacaoSlack());
+        // 
     }
 
     @Override

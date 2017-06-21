@@ -126,7 +126,7 @@
           <cm:constant cm:id="iQ1FfDydMLkOLNi5u" cm:type="ps:filetype">def</cm:constant>
         </cm:property>
         <cm:property cm:id="ixBkWbs5x-GFQoapL" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="inWH6qQW4sIrObw55" cm:type="ps:directory">C:\Users\Danilo Damasceno\workspace\SIMBASTART\input\java\src\main\java\br\ufrn\simba\instancia</cm:constant>
+          <cm:constant cm:id="inWH6qQW4sIrObw55" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia</cm:constant>
         </cm:property>
         <cm:property cm:id="iKp_ypqhLi1O4-T-n" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="iAYCoGg2a3A3ulXGy" cm:type="ps:string">Danilo Damasceno</cm:constant>
@@ -185,7 +185,7 @@
           <cm:constant cm:id="iRs3KMvsmUspbUvCA" cm:type="ps:filetype">def</cm:constant>
         </cm:property>
         <cm:property cm:id="i1LoOPvcZf-ghrvfL" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iMiGwkoNCNYtM6Jle" cm:type="ps:directory">C:\Users\Danilo Damasceno\workspace\SIMBASTART\input\java\src\main\java\br\ufrn\simba\instancia\estrategias</cm:constant>
+          <cm:constant cm:id="iMiGwkoNCNYtM6Jle" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
         </cm:property>
         <cm:property cm:id="it7aZvYG0n4o35Lje" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="i0rg4LDGoPya4DtQN" cm:type="ps:string">Danilo Damasceno</cm:constant>
@@ -215,7 +215,7 @@
           <cm:constant cm:id="iMry3GVNgPGk3rr9-" cm:type="ps:filetype">def</cm:constant>
         </cm:property>
         <cm:property cm:id="ia91GahBivP9wjn6m" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="i1jCpmJz652YjNcG5" cm:type="ps:directory">C:\Users\Danilo Damasceno\workspace\SIMBASTART\input\java\src\main\java\br\ufrn\simba\instancia\estrategias</cm:constant>
+          <cm:constant cm:id="i1jCpmJz652YjNcG5" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
         </cm:property>
         <cm:property cm:id="icQjyauC-C8Osyuid" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="iAxEl45mDnzMubOl0" cm:type="ps:string">Danilo Damasceno</cm:constant>
@@ -274,7 +274,7 @@
           <cm:constant cm:id="iskaNl5_w5iwKG3sc" cm:type="ps:filetype">def</cm:constant>
         </cm:property>
         <cm:property cm:id="ikIWAbwSWnC6ZvOYf" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iwabIurbu0_1Pv2z1" cm:type="ps:directory">C:\Users\Danilo Damasceno\workspace\SIMBASTART\input\java\src\main\java\br\ufrn\simba\instancia\estrategias</cm:constant>
+          <cm:constant cm:id="iwabIurbu0_1Pv2z1" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
         </cm:property>
         <cm:property cm:id="if__AGKnJyGNxxDvZ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="irxN6v23Ziyb3tcYA" cm:type="ps:string">Danilo Damasceno</cm:constant>
@@ -333,7 +333,7 @@
           <cm:constant cm:id="il7QyP4HnMP5cZDD_" cm:type="ps:filetype">def</cm:constant>
         </cm:property>
         <cm:property cm:id="iD0jbQwoLXuVaUTNI" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iEjeM1H6prJcwOLwh" cm:type="ps:directory">C:\Users\Danilo Damasceno\workspace\SIMBASTART\input\java\src\main\java\br\ufrn\simba\instancia\estrategias</cm:constant>
+          <cm:constant cm:id="iEjeM1H6prJcwOLwh" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
         </cm:property>
         <cm:property cm:id="im3vVJpq7v7ussyJ-" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="iHF3PSo1NTCKzEIlW" cm:type="ps:string">Danilo Damasceno</cm:constant>
@@ -392,7 +392,7 @@
           <cm:constant cm:id="iPUp9zQXnMvAf04if" cm:type="ps:filetype">def</cm:constant>
         </cm:property>
         <cm:property cm:id="iKDEWdSMzKTI8fns7" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="i_Jiz86kUbFVvz5Ru" cm:type="ps:directory">C:\Users\Danilo Damasceno\workspace\SIMBASTART\input\java\src\main\java\br\ufrn\simba\instancia\estrategias</cm:constant>
+          <cm:constant cm:id="i_Jiz86kUbFVvz5Ru" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
         </cm:property>
         <cm:property cm:id="ixA6Xx8iknxuP67NF" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="iYUt-b28HHB1kPkXx" cm:type="ps:string">Danilo Damasceno</cm:constant>
@@ -451,7 +451,7 @@
           <cm:constant cm:id="it1-e-Y1ONmNFigGK" cm:type="ps:filetype">def</cm:constant>
         </cm:property>
         <cm:property cm:id="iI2yJiJOtpWzxhZi_" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="ita_yWmlAwLMWkc2q" cm:type="ps:directory">C:\Users\Danilo Damasceno\workspace\SIMBASTART\input\java\src\main\java\br\ufrn\simba\instancia\estrategias</cm:constant>
+          <cm:constant cm:id="ita_yWmlAwLMWkc2q" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
         </cm:property>
         <cm:property cm:id="i3f1zOLjeWcxDWmjT" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="iSI460ZkaSLIu_lkH" cm:type="ps:string">Danilo Damasceno</cm:constant>
@@ -510,7 +510,7 @@
           <cm:constant cm:id="i5ea6_j7CB7Lhptsj" cm:type="ps:filetype">def</cm:constant>
         </cm:property>
         <cm:property cm:id="iftO-PhJOETN7VIuW" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iYZUCUMdS8HFhbJUi" cm:type="ps:directory">C:\Users\Danilo Damasceno\workspace\SIMBASTART\input\java\src\main\java\br\ufrn\simba\instancia\estrategias</cm:constant>
+          <cm:constant cm:id="iYZUCUMdS8HFhbJUi" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
         </cm:property>
         <cm:property cm:id="iRNkG9MPxqhla9M6u" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="iB3k6abWslD-eEn6N" cm:type="ps:string">Danilo Damasceno</cm:constant>
@@ -569,7 +569,7 @@
           <cm:constant cm:id="i2XkxOnUcxatweZbs" cm:type="ps:filetype">def</cm:constant>
         </cm:property>
         <cm:property cm:id="ih-3YkuQMV0pfO0Y3" cm:type="ps:directory" cm:fixed="true" cm:name="srcdir">
-          <cm:constant cm:id="iNdsLrP-IGmXIVyUD" cm:type="ps:directory">C:\Users\Danilo Damasceno\workspace\SIMBASTART\input\java\src\main\java\br\ufrn\simba\instancia\estrategias</cm:constant>
+          <cm:constant cm:id="iNdsLrP-IGmXIVyUD" cm:type="ps:directory">/home/joao/workspaceUFRN/SIMBA-pure::variants/input/java/src/main/java/br/ufrn/simba/instancia/estrategias</cm:constant>
         </cm:property>
         <cm:property cm:id="ikA0NBE3pcb02d5jp" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
           <cm:constant cm:id="iAwZYm9dEkZTYYR9_" cm:type="ps:string">Danilo Damasceno</cm:constant>

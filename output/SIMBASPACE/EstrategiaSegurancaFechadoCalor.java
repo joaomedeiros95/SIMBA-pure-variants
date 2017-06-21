@@ -18,11 +18,15 @@ import java.util.List;
 public class EstrategiaSegurancaFechadoCalor extends EstrategiaSegurancaFechado {
 
     public EstrategiaSegurancaFechadoCalor() {
+    	// 
         this.addAlerta(new NotificacaoEmail());
+        // 
+        // 
         this.addAlerta(new Sirene(false, 5));
-        this.addAlerta(new Bollands(false, 8));
-        this.addAlerta(new NotificacaoPolicia());
-        this.addAlerta(new NotificacaoSlack());
+        // 
+        // 
+        // 
+        // 
     }
 
     @Override

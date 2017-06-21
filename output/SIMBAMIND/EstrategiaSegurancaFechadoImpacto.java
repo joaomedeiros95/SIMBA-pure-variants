@@ -18,11 +18,21 @@ import java.util.List;
 public class EstrategiaSegurancaFechadoImpacto extends EstrategiaSegurancaFechado {
 
     public EstrategiaSegurancaFechadoImpacto() {
+    	// 
         this.addAlerta(new NotificacaoEmail());
+        // 
+        // 
         this.addAlerta(new Sirene(false, 5));
+        // 
+        // 
         this.addAlerta(new Bollands(false, 8));
+        // 
+        // 
         this.addAlerta(new NotificacaoPolicia());
+        // 
+        // 
         this.addAlerta(new NotificacaoSlack());
+        // 
     }
 
     @Override

@@ -16,19 +16,29 @@ import java.util.List;
 public class EstrategiaSegurancaAbertoCalor extends EstrategiaSegurancaAberto {
 
     public EstrategiaSegurancaAbertoCalor() {
+    	// 
         this.addAlerta(new NotificacaoEmail());
+        // 
+        
+        // 
         this.addAlerta(new NotificacaoSlack());
+        // 
+        
+        // 
         this.addAlerta(new Sirene(false, 5));
+        // 
     }
 
     @Override
     public void execute(List<Estado> estados) throws IOException, EmailException {
         for (final Estado estado : estados) {
-            if (estado.getHash() == Instancia.sensorCalorHash) {
+        	
+        	if (estado.getHash() == Instancia.sensorCalorHash) {
                 if (estado.getValor() == 1) {
                     notificar(estados);
                 }
             }
+        	
         }
     }
 }
